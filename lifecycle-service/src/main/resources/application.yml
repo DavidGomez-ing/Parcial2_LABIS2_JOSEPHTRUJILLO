@@ -1,0 +1,16 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: lifecycle-service
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        default-requeue-rejected: false
+
+question:
+  service-url: http://localhost:8083
